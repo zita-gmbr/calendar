@@ -5,10 +5,19 @@ body, html, div, main, header {
 
 .calendar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
     grid-auto-rows: 14vw;
+    height: 100vh;
 }
 
 .day {
     background-color: palegoldenrod;
+    margin: 5px;
+}
+
+.calendar-header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: powderblue;
 }
