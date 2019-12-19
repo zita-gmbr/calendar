@@ -1,5 +1,8 @@
 /* green is this code #26b7a0 */
 /* grey is this code #3d3f4c */
+/* white is this code #f8eef4 */
+/* lightblue is this code #77a1f6 */
+/* darkerblue is this code #6195ff */
 /* font-family: 'Source Sans Pro', sans-serif; */
 
 body, html, div, main, header {
@@ -13,30 +16,54 @@ body, html, div, main, header {
     grid-template-rows: 1fr;
     grid-auto-rows: 14vw;
     height: 100vh;
-    color: #3d3f4c;
+    color: #f8eef4;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .day {
-    background-color:#26b7a0;
+    background-color:#77a1f6;
     margin: 5px;
     padding: 5px;
+/*  background-image: url(bluesnow.png);
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.holiday,
+.day:nth-child(7n),
+.day:nth-child(7n-1) {
+    background-color:#6195ff;
+    color: #f3f3f3;
+}
+
+.holiday {
+    background-color: #17e2c0;
 }
 
 .calendar-header {
     grid-column-start: 1;
     grid-column-end: -1;
     background-color: powderblue;
-    background-image: url(duotone.png);
+    background-image: url(bluesnow.png);
     background-size: cover;
+/*     background-attachment: fixed; */
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     margin: 5px;
+    text-shadow: 5px 5 px #a6afae;
 }
 
 .space {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.calendar-title {
+    font-size: 100px;
+    font-weight: 900;
+    padding: 5px;
+    line-height: 0.8;
 }
