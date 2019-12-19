@@ -20,4 +20,12 @@ body, html, div, main, header {
     grid-column-start: 1;
     grid-column-end: -1;
     background-color: powderblue;
+    display: flex;
+    align-items: flex-end;
+}
+
+.space {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rosybrown;
 }
